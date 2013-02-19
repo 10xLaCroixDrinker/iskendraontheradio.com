@@ -3,16 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Is Kendra on the Radio?</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="css/main.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="js/main.js"></script>
   </head>
   <body>
+    <h1>Is Kendra on the radio?</h1>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <div class="no">
+      <p>No.</p>
+    </div>
+    
+    <div class="yes">
+      <p>Yes!</p>
+      <audio id="audio" controls="controls">
+        <source src="http://sc1.lax.llnw.net:80/stream/riosal_kjzz" type="audio/mpeg">
+      </audio >
+      <p id="title">KJZZ 91.5 live stream</p>
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/jquery.jplayer.min.js"></script>
     <script src="js/main.js"></script>
 
     <script type="text/javascript">
@@ -23,7 +35,7 @@
         t.async = true;
         t.id    = 'gauges-tracker';
         t.setAttribute('data-site-id', '5123dbdcf5a1f56ce9000025');
-        t.src = '//secure.gaug.es/track.js';
+        t.src = 'http://secure.gaug.es/track.js';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(t, s);
       })();
