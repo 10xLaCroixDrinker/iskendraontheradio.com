@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jimmy King -- dev -- @jimmyking
+
+# THANKS
+
+    Ash Ponders for giving me the idea. @ashponders
+    Kendra Worsnup for letting me do it. @KendraWorsnup
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery
