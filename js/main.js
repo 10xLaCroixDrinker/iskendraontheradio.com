@@ -7,19 +7,19 @@ $(function() {
   var tweetTime = tweetCreated[3];
   var currentTime = d.getUTCHours() + ":" + d.getUTCMinutes() + ":" + d.getUTCSeconds();
     
-  var getMinutes = function(time) {
+  var jimmyMinutes = function(time) {
     time = time.split(':');
     var minutes = 0;
-    minutes += parseInt(time[0]) * 60;
-    minutes += parseInt(time[1]);
+    minutes += parseInt(time[0],10) * 60;
+    minutes += parseInt(time[1],10);
     return minutes;
   }
 
   var tweet = data[0].text.split(' ');
 
   if (tweet.indexOf('#KJZZ') != -1 &&
-      tweetCreated[2] == d.getDate() &&
-      (getMinutes(currentTime) - getMinutes(tweetTime)) <= 15) {
+      tweetCreated[2] == d.getUTCDate() &&
+      (jimmyMinutes(currentTime) - jimmyMinutes(tweetTime)) <= 15) {
     $('.no').hide();
     $('.yes').show();
   }
