@@ -9,20 +9,30 @@
     <link rel="stylesheet" href="css/all.css">
   </head>
   <body>
-    <h1>Is Kendra on the radio?</h1>
-
-    <div class="answer no">
-      <p>No.</p>
-    </div>
+    <header>
+      <h1>Is <a href="http://kendraworsnup.com/" title="Kendra Worsnup" target="_blank">Kendra</a> on the radio?</h1>
+    </header>
     
-    <div class="answer yes">
-      <p>Yes!</p>
-      <audio id="audio" controls="controls">
-        <source src="http://sc1.lax.llnw.net:80/stream/riosal_kjzz" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio >
-      <p class="title"><a href="http://www.kjzz.org/" target="_blank" title="KJZZ.org">KJZZ 91.5</a> live stream</p>
-    </div>
+    <section class="answer">
+      <div class="no">
+        <p>No.</p>
+      </div>
+      
+      <div class="yes">
+        <p>Yes!</p>
+  
+        <audio id="audio" controls="controls" preload="auto">
+          <source src="http://sc1.lax.llnw.net:80/stream/riosal_kjzz" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio >
+  
+        <p class="title"><a href="http://www.kjzz.org/" target="_blank" title="KJZZ.org">KJZZ 91.5</a> live stream</p>
+      </div>
+    </section>
+        
+    <footer>
+      <p>A service provided by <a href="http://jimmyking.me">Jimmy King</a></p>
+    </footer>
     
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="js/jquery.jplayer.min.js"></script>
