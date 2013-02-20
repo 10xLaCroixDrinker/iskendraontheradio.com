@@ -17,11 +17,16 @@ $(function() {
 
   var tweet = data[0].text.split(' ');
 
+  for (i = 0; i < tweet.length; i++) {
+    tweet[i] = tweet[i].toUpperCase();
+  }
+
   if (tweet.indexOf('#KJZZ') != -1 &&
       tweetCreated[2] == d.getUTCDate() &&
       (jimmyMinutes(currentTime) - jimmyMinutes(tweetTime)) <= 15) {
     $('.no').hide();
     $('.yes').show();
-  }
+    $('audio').attr('autoplay','autoplay');
+    }
   });
 });
