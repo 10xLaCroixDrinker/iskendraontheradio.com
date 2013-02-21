@@ -15,6 +15,6 @@ html lang: 'en', ->
     text @content
     
     script src: 'http://code.jquery.com/jquery-1.9.1.min.js'
-    script src: 'js/jquery.jplayer.min.js'
-    script src: 'js/jquery.fittext.js'
+    script src: 'lib/jquery.jplayer.min.js'
+    script src: 'lib/jquery.fittext.js'
     script src: 'js/main.js'
