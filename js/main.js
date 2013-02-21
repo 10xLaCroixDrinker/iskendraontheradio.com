@@ -26,6 +26,7 @@ $(function() {
         (jimmyMinutes(currentTime) - jimmyMinutes(tweetTime)) <= 15) {
       $('.no').hide();
       $('.yes').show();
+      $('h2').fitText(0.2);
       $('audio').attr('autoplay','autoplay');
     }
   });
