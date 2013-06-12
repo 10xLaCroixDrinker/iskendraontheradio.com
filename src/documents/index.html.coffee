@@ -6,7 +6,7 @@ keywords: 'Kendra Szabo, KJZZ, 91.5, radio, streaming, single-serving'
 ---
 
 header ->
-  h1 "Is #{cede -> a href: 'http://kendraworsnup.com/', title: 'Kendra Worsnup', target: '_blank', 'Kendra'} on the radio?"
+  h1 "Is #{cede -> a href: 'http://kendraworsnup.com/', title: 'Kendra Szabo', target: '_blank', 'Kendra'} on the radio?"
 
 section class: 'answer', ->
   div class: 'no', -> 

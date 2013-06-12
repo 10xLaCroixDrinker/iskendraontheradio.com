@@ -8,7 +8,7 @@
 # THANKS
 
     Ash Ponders for giving me the idea. @ashponders
-    Kendra Szabo for letting me do it. @kendraszabo
+    Kendra Szabo for letting me do it. @KendraSzabo
 
 # TECHNOLOGY COLOPHON
 
