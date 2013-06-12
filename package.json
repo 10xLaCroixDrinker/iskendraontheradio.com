@@ -24,9 +24,8 @@
     "docpad": "6.21.x",
     "docpad-plugin-coffeekup": "2.x",
     "docpad-plugin-coffeescript": "~2.2.0",
-    "docpad-plugin-eco": "2.x",
-    "docpad-plugin-ghpages": "2.x",
-    "docpad-plugin-marked": "2.x"
+    "docpad-plugin-less": "2.x",
+    "docpad-plugin-ghpages": "2.x"
   },
   "main": "node_modules/docpad/bin/docpad-server"
 }
