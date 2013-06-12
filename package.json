@@ -1,5 +1,5 @@
 {
-  "name": "isKendraOnTheRadio",
+  "name": "iskendraontheradio.com",
   "version": "0.1.0",
   "private": true,
   "description": "Is Kendra on the Radio?",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jking90/isKendraOnTheRadio.git"
+    "url": "https://github.com/jking90/iskendraontheradio.com.git"
   },
   "engines": {
     "node": "0.8.x",
@@ -25,6 +25,7 @@
     "docpad-plugin-coffeekup": "2.x",
     "docpad-plugin-coffeescript": "~2.2.0",
     "docpad-plugin-eco": "2.x",
+    "docpad-plugin-ghpages": "2.x",
     "docpad-plugin-marked": "2.x"
   },
   "main": "node_modules/docpad/bin/docpad-server"
