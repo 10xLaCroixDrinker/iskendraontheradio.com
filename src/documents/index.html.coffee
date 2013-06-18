@@ -14,7 +14,7 @@ section class: 'answer', ->
   div class: 'yes', ->
     h2 'Yes!' 
     audio controls: 'controls', preload: 'auto', ->
-      source src='http://sc1.lax.llnw.net:80/stream/riosal_kjzz', type: 'audio/mpeg'
+      source src: 'http://sc1.lax.llnw.net:80/stream/riosal_kjzz', type: 'audio/mpeg'
       text 'Your browser does not support the audio element.'
     p class: 'title',  "#{cede -> a href: 'http://www.kjzz.org/', target: '_blank', title: 'KJZZ.org', 'KJZZ 91.5'} live stream"
 
