@@ -1,38 +1,42 @@
 $(function() {
   $('h2').fitText(0.2);
+
+  getTweet.please('347152310096519168', isKendraOnTheRadio);
   
-  // Get latest tweet
-  $.getJSON("https://api.twitter.com/1/statuses/user_timeline.json?screen_name=KendraSzabo&count=1&include_rts=1&callback=?", function(data) {
-    var tweet = data[0].text.split(' '),
-        tweetCreated = data[0].created_at.split(' '),
-        tweetTime = data[0].created_at.split(' ')[3],
-        d = new Date(),
-        currentTime = d.getUTCHours() + ":" + d.getUTCMinutes() + ":" + d.getUTCSeconds();
-    
-    // Convert time to total minutes
-    var jimmyMinutes = function(time) {
-      time = time.split(':');
-      var minutes = 0;
-      minutes += parseInt(time[0],10) * 60;
-      minutes += parseInt(time[1],10);
-      return minutes;
+  var tweet = {};
+
+  function isKendraOnTheRadio() {
+    tweet = getTweet.tweet;
+
+    if (findHashtag(tweet.text, 'KJZZ')) {
+      if (checkTime()) {
+        $('.no').hide();
+        $('.yes').show();
+        $('h2').fitText(0.2);
+        $('audio').attr('autoplay','autoplay');
+      }
     }
-    
-    for (i = 0; i < tweet.length; i++) {
-      tweet[i] = tweet[i].toUpperCase();
+  }
+
+  function checkTime() {
+    var now = $.now(),
+        fifteenMin = 900000; // 15min in milliseconds
+      
+    if (now <= (tweet.time + fifteenMin)) {
+      return true;
+    } else {
+      return false;
     }
-    
-    // Check if tweet contains hashtag and was sent within last 15min
-    if (tweet.indexOf('#KJZZ') != -1 &&
-        tweetCreated[2] == d.getUTCDate() &&
-        (jimmyMinutes(currentTime) - jimmyMinutes(tweetTime)) <= 15) {
-      $('.no').hide();
-      $('.yes').show();
-      $('h2').fitText(0.2);
-      $('audio').attr('autoplay','autoplay');
+  }
+
+  function findHashtag(tweet, hashtag) {
+    if (tweet.indexOf('#' + hashtag) != -1) {
+      return true;
+    } else {
+      return false;
     }
-  });
-  
+  }
+
   // gaug.es analytics
   var _gauges = _gauges || [];
   (function() {

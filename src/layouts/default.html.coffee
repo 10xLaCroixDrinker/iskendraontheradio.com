@@ -17,4 +17,5 @@ html lang: 'en', ->
     script src: 'http://code.jquery.com/jquery-2.0.1.min.js'
     script src: 'lib/jquery.jplayer.min.js'
     script src: 'lib/jquery.fittext.js'
+    script src: 'js/get-tweet.js'
     script src: 'js/main.js'
