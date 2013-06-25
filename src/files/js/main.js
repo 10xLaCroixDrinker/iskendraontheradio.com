@@ -1,7 +1,7 @@
 $(function() {
   $('h2').fitText(0.2);
 
-  getTweet.please('347152310096519168', isKendraOnTheRadio);
+  getTweet.please('349394013427744768', isKendraOnTheRadio);
   
   var tweet = {};
 
