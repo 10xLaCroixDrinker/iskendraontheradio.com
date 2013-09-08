@@ -16,7 +16,7 @@
     "url": "https://github.com/jking90/iskendraontheradio.com.git"
   },
   "engines": {
-    "node": "0.8.x",
+    "node": ">=0.8",
     "npm": "1.2.x",
     "docpad": "6.21.x"
   },
@@ -28,5 +28,9 @@
     "docpad-plugin-ghpages": "~2.3.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-exec": "~0.4.2",
+    "grunt-node-version": "~1.0.0"
+  }
 }
