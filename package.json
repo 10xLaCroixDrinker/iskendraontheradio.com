@@ -21,9 +21,9 @@
     "docpad": "6.21.x"
   },
   "dependencies": {
-    "docpad": "~6.52.1",
+    "docpad": "~6.52.2",
     "docpad-plugin-coffeekup": "~2.2.0",
-    "docpad-plugin-coffeescript": "~2.2.2",
+    "docpad-plugin-coffeescript": "~2.2.3",
     "docpad-plugin-less": "~2.2.0",
     "docpad-plugin-ghpages": "~2.3.0"
   },
