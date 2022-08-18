@@ -4,16 +4,16 @@
   "private": true,
   "description": "Is Kendra on the Radio?",
   "homepage": "http://iskendraontheradio.com",
-  "author": "Jimmy King <hello@jimmyking.me> (http://jimmyking.me)",
+  "author": "Jamie King <hello@jamieking.me> (http://jamieking.me)",
   "maintainers": [
-    "Jimmy King <hello@jimmyking.me> (https://github.com/jking90)"
+    "Jamie King <hello@jamieking.me> (https://github.com/10xLaCroixDrinker)"
   ],
   "contributors": [
-    "Jimmy King <hello@jimmyking.me> (https://github.com/jking90)"
+    "Jamie King <hello@jamieking.me> (https://github.com/10xLaCroixDrinker)"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jking90/iskendraontheradio.com.git"
+    "url": "https://github.com/10xLaCroixDrinker/iskendraontheradio.com.git"
   },
   "engines": {
     "node": ">=0.8",
