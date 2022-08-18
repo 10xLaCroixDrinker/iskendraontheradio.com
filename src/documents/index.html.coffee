@@ -19,4 +19,4 @@ section class: 'answer', ->
     p class: 'title',  "#{cede -> a href: 'http://www.kjzz.org/', target: '_blank', title: 'KJZZ.org', 'KJZZ 91.5'} live stream"
 
 footer ->
-  p "A service provided by #{cede -> a href: 'http://jimmyking.me', target: '_blank', 'Jimmy King'}."
+  p "A service provided by #{cede -> a href: 'http://jamieking.me', target: '_blank', 'Jamie King'}."
